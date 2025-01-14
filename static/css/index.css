@@ -391,6 +391,7 @@ footer{
     }
     footer{
         gap:45vw;
+       width:100vw;
     }
     .founder-name{
         width:20px;
