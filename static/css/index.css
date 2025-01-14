@@ -276,6 +276,7 @@ footer{
         overflow: hidden;
         gap:25vw;
         justify-content: space-between;
+        width:100vw;
     }
     
 
@@ -295,7 +296,7 @@ footer{
         border-radius: 5px;
         
         position: absolute;
-        /*left: -200px;*/
+        left: -200px;
         top:120px;
         transition: 1.25s;
         padding: 30px;
