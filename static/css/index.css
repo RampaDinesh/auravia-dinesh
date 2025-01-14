@@ -1,0 +1,408 @@
+body{
+    background-color: whitesmoke;
+}
+.mobile-view{
+    display: none;
+}
+.heading{
+    color: red;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.nav-bar{
+    background-color: white;
+    display: flex;
+    padding:7px;
+    border-radius: 5px;
+    box-shadow: 10px black;
+    width: 100vw;
+    overflow: hidden;
+    transform: tr;
+}
+
+.companyname{
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 19px;
+}
+
+.nav-links ul{
+    display: flex;
+    gap:12vw;
+    list-style: none;
+    position: relative;
+    top:18px;
+    text-transform: capitalize;
+    font-weight: bold;
+
+
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    
+    text-decoration: underline;
+}
+
+/*main-conatiner*/
+
+
+.main-container1{
+    display: flex;
+    gap:20vw;
+}
+
+.ourslogan{
+    text-transform: capitalize;
+    color: blue;
+    position: relative;
+    top:200px;
+    
+    animation-name: slogananimation ;
+    animation-iteration-count: infinite ;
+    animation-duration: 7s;
+
+}
+
+
+/* slogan animation*/
+
+@keyframes slogananimation {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+/*main -container 2*/
+.focus-on-robots,.focus-on-space,.focus-on-eye{
+    display: flex;
+    gap:25vw;
+}
+.focus-heading{
+    text-transform: capitalize;
+}
+
+.focus-heading h1{
+    color: blue;
+}
+.focus-heading p{
+    line-height: 1.5rem;
+    width:27vw;
+}
+.focus-display{
+    background-color: white;
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 10px black;
+
+
+}
+
+.focus-images{
+    height: 200px;
+    width: 200px;
+    background: url(/static/images/robot_image.jpg);
+    background-size: contain;
+    background-position:center;
+    padding: 20px;
+    position: relative;
+    margin: 20px;
+    top: 11px;
+    left: 25px;
+    border-radius: 5px;
+    
+
+    
+    
+    
+    
+
+    
+}
+
+    
+    
+
+.focus-images::after{
+    position: relative;
+    top:270px;
+    left:75px;
+    text-transform: capitalize;
+    font-family: monospace;
+    font-size: 25px;
+    color: blue;
+    content: "robots";
+}
+
+.focus-images1{
+    height: 200px;
+    width: 200px;
+    background: url(/static/images/space_image.png);
+    background-size: contain;
+    background-position:center;
+    padding: 50px;
+    position: relative;
+    margin: 20px;
+    top: 11px;
+    border-radius: 5px;
+     
+}
+
+
+.focus-images1::after,.focus-images2::after{
+    position: relative;
+    top:270px;
+    left:75px;
+    text-transform: capitalize;
+    font-family: monospace;
+    font-size: 25px;
+    color: blue;
+    content: "space exploration";
+}
+
+
+.focus-images2{
+    background: url(/static/images/eyetech.png);
+    height: 200px;
+    width: 200px;
+    
+    background-size: contain;
+    background-position:center;
+    padding: 50px;
+    position: relative;
+    margin: 20px;
+    top: 11px;
+    border-radius: 5px;
+
+}
+
+.focus-images2::after{
+    content: "eye tech";
+}
+
+
+.main-container2{
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer{
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    gap:20vw;
+    width:100vw;
+    overflow: hidden;
+
+
+}
+
+.founder-name{
+    text-transform: capitalize;
+}
+
+.copy-right{
+    position: relative;
+    top:5px;
+    
+}
+
+.copy-right p{
+    font-size: 18px;
+}
+
+.email-subscribe input{
+    top:5px;
+    height: 50px;
+    width: 250px;
+    font-size: 14px;
+}
+
+
+
+
+.mobile-view .menu-bar{
+    width:50px;
+    height:5px;
+    border-radius: 5px;
+    background-color: black;
+    margin-bottom: 10px;
+    position: relative;
+    top:20px;
+    cursor: pointer;
+    transition: 1.25s;
+
+}
+
+
+/* mobile - view */
+
+@media screen and (max-width:720px) {
+    /* header making */
+    
+    .nav-bar{
+        height: 60px;
+        padding: 35px;
+    }
+    .companyname{
+        margin-left: 0;
+    }
+    .companyname h1{
+        line-height: 1.5rem;
+        width: 100vw;
+        padding: 0;
+        color: blue;
+        
+    }
+    .nav-bar{
+        display: flex;
+        overflow: hidden;
+        gap:25vw;
+        justify-content: space-between;
+    }
+    
+
+    .mobile-view{
+        display: block;
+        position: relative;
+        
+        
+        
+    
+    }
+    
+
+    .nav-links {
+        
+        background-color: black;
+        border-radius: 5px;
+        
+        position: absolute;
+        /*left: -200px;*/
+        top:120px;
+        transition: 1.25s;
+        padding: 30px;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        left: -20px;
+
+        
+    }
+    
+    
+    
+    .main-container1{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        width: 100vw;
+    }
+
+    .main-container1 .company-logo{
+        height: 500px;
+        
+        
+        
+        
+    }
+
+    .company-logo{
+        margin:0;
+    }
+    .ourslogan{
+        position: relative;
+        top:-7px;
+        
+        
+        
+    }
+
+    .ourslogan h1{
+        font-size: 23px;
+        text-align: center;
+        
+    }
+
+
+
+    .focus-on-robots,.focus-on-space,.focus-on-eye{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+
+    .focus-on-robots p,.focus-on-space p,.focus-on-eye p {
+        width: 85vw;
+    }
+
+    
+    .focus-display{
+        
+        height:400px;
+        width: 100vw;
+        margin-bottom: 70px;
+        
+    }
+    .focus-display .focus-images,.focus-display .focus-images1,.focus-images2{
+        border-radius: 50%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    .focus-images1{
+        height:150px;
+        width:150px;
+    }
+
+    .focus-images{
+        height: 170px;
+        width:170px;
+    }
+    
+    .focus-images2{
+        position: relative;
+        right:25px;
+    }
+    footer{
+        gap:45vw;
+    }
+    .founder-name{
+        width:20px;
+    }
+    .email-subscribe{
+        display: none;
+    }
+
+    
+    
+    
+}
+
+
+
+
+
+
