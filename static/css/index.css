@@ -116,7 +116,7 @@ a:hover{
 .focus-images{
     height: 200px;
     width: 200px;
-    background: url(/static/images/robot_image.jpg);
+    background: url(../images/robot_image.jpg);
     background-size: contain;
     background-position:center;
     padding: 20px;
@@ -152,7 +152,7 @@ a:hover{
 .focus-images1{
     height: 200px;
     width: 200px;
-    background: url(/static/images/space_image.png);
+    background: url(../images/space_image.png);
     background-size: contain;
     background-position:center;
     padding: 50px;
@@ -177,7 +177,7 @@ a:hover{
 
 
 .focus-images2{
-    background: url(/static/images/eyetech.png);
+    background: url(../images/eyetech.png);
     height: 200px;
     width: 200px;
     
