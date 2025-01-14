@@ -329,9 +329,9 @@ footer{
     }
 
     .company-logo img{
-        height:200px;
-        width:200px;
-        left:-10px;
+        height:400px;
+        width:400px;
+        left:-8px;
     }
     .ourslogan{
         position: relative;
